@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cowsay</title>
+    </head>
+    <body>
+        {% if cow %}
+            <!-- https://stackoverflow.com/a/36658 -->
+            <pre>{{ cow }}</pre>
+        {% endif %}
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Submit!">
+        </form>
+    </body>
+</html>

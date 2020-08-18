@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cowsay History</title>
+    </head>
+    <body>
+        {% for cowsay in history %}
+            <p>{{ cowsay.text }}</p>
+        {% endfor %}
+    </body>
+</html>
